@@ -371,7 +371,7 @@ QComboBox {
 }
 
 QComboBox::selected {
-  background: #77767b;
+  background: #5e5c64;
 }
 
 QComboBox:hover {
@@ -553,7 +553,7 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-  background: rgba(255, 255, 255, 0.08);
+  background: #77767b;
 }
 
 /* Pad settings: Controller image */
