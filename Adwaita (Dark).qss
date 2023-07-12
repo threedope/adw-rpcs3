@@ -553,7 +553,7 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-  background: #77767b;
+  background: #78aeed;
 }
 
 /* Pad settings: Controller image */
