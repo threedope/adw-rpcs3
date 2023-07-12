@@ -631,7 +631,7 @@ QDockWidget#debugger {
 }
 
 QTextEdit {
-  /* background: #242424; */
+  background: #242424;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.2em;
   margin-left: 2px;
@@ -705,9 +705,9 @@ QLabel#thumbnail_icon_color {
   color: #3584e4;
 }
 
-/* Memory Viewer */
+/* Memory viewer */
 QLabel#memory_viewer_address_panel {
-  color: #78aeed; /* Font Color: Blue */
+  color: #78aeed; /* Blue font */
 }
 
 /* Debugger colors */
