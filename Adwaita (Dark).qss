@@ -443,7 +443,7 @@ QPushButton:disabled {
 QSpinBox, QDoubleSpinBox {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px transparent rgba(0, 0, 0, 0.36);
+  border: 1px transparent rgba(0, 0, 0, 0.0);
   border-radius: 2px;
   padding: 2px;
 }
@@ -459,13 +459,18 @@ QSpinBox:focus, QDoubleSpinBox:focus {
 QSpinBox:disabled, QDoubleSpinBox:disabled {
   color: #77767b;
   background: rgba(0, 0, 0, 0.36);
-  border: 1px transparent rgba(0, 0, 0, 0.36);
+  border: 1px transparent rgba(0, 0, 0, 0.0);
 }
 
 /* Libraries list & debugger */
 QListWidget {
   border: 1px solid rgba(0, 0, 0, 0.36);
   border-radius: 0.2em;
+}
+
+#debugger QListWidget {
+  background: #242424;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 QListWidget:disabled {
@@ -539,7 +544,6 @@ QTableView {
   background: #242424;
   selection-color: #ffffff;
   selection-background-color: rgba(53, 132, 228, 0.08);
-  /* border: 1px solid rgba(0, 0, 0, 0.36); */
   border: none;
 }
 
@@ -555,7 +559,9 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-  background: #78aeed;
+  border: 1px transparent rgba(0, 0, 0, 0.0);
+  border-radius: .2em;
+  background: #3584e4;
 }
 
 /* Pad settings: Controller image */
@@ -625,9 +631,10 @@ QDockWidget#debugger {
 }
 
 QTextEdit {
-  border: 1px solid rgba(0, 0, 0, 0.36);
+  /* background: #242424; */
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.2em;
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 /* Underlined text entry */
