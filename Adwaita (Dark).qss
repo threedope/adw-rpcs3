@@ -468,7 +468,8 @@ QListWidget {
 }
 
 QListWidget:disabled {
-  border: 1px solid #4d5058;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 0.2em;
 }
 
 QListWidget::item:selected {
@@ -484,7 +485,7 @@ QListWidget::item:focus {
 
 QListWidget::item:hover {
   background: #5e5c64;
-  border-radius: 0.25em;
+  border-radius: 0.125em;
 }
 
 QListWidget::indicator {
@@ -623,7 +624,9 @@ QDockWidget#debugger {
 }
 
 QTextEdit {
-  border-top: 1px solid #78aeed;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 0.2em;
+  margin-left: 3px;
 }
 
 /* Underlined text entry */
@@ -694,14 +697,19 @@ QLabel#thumbnail_icon_color {
   color: #3584e4;
 }
 
+/* Memory Viewer */
+QLabel#memory_viewer_address_panel {
+  color: #78aeed; /* Font Color: Blue */
+}
+
 /* Debugger colors */
 QLabel#debugger_frame_breakpoint {
-  color: #fff; /* White font */
+  color: #ffffff; /* White font */
   background: #cd9309; /* Yellow font */
 }
 
 QLabel#debugger_frame_pc {
-  color: #fff; /* White font */
+  color: #ffffff; /* White font */
   background: #26a269; /* Green font */
 }
 
